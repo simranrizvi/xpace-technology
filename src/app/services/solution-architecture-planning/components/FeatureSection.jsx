@@ -41,7 +41,7 @@ const FeatureSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col"
         >
-          <h2 className="text-4xl md:text-4xl font-extrabold text-primary mb-2 leading-11">
+          <h2 className="text-4xl md:text-4xl font-bold text-primary mb-2 leading-11">
             Turning Strategy into <span className="text-red-600">Technical Reality</span>
           </h2>
 

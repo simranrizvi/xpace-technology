@@ -57,11 +57,11 @@ const DeliverablesSection = () => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold !text-white mb-6"
+            className="text-4xl md:text-4xl font-bold text-white mb-6"
           >
             What We Deliver
           </motion.h2>
-          <p className="text-blue-100/80 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-blue-100/80 text-md max-w-2xl mx-auto leading-relaxed">
             Comprehensive planning that covers every layer of your enterprise stack.
           </p>
         </div>
@@ -82,11 +82,11 @@ const DeliverablesSection = () => {
                 {item.icon}
               </div>
               
-              <h3 className="text-2xl font-bold text-[#1a2b4b] mb-4">
+              <h3 className="text-2xl font-bold text-primary mb-4">
                 {item.title}
               </h3>
               
-              <p className="text-gray-500 text-[15px] leading-relaxed">
+              <p className="text-secondary text-[15px] leading-relaxed">
                 {item.desc}
               </p>
             </motion.div>

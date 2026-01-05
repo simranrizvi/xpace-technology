@@ -37,7 +37,7 @@ const ExpertiseSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-3xl font-extrabold text-primary mb-4 items-center text-center"
+            className="text-3xl md:text-4xl font-bold text-primary mb-4 items-center text-center"
           >
             Where We Apply This Expertise
           </motion.h2>

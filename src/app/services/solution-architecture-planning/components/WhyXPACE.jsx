@@ -21,9 +21,9 @@ const reasons = [
 
 const WhyXPACE = () => {
   return (
-    <section className="py-20 bg-white px-6">
+    <section className="py-20 bg-white ">
       {/* Container 80% Width for Desktop */}
-      <div className="max-w-[90%] lg:max-w-[93%] mx-auto bg-[#1a2b4b] rounded-2xl overflow-hidden shadow-2xl">
+      <div className="max-w-full lg:max-w-full mx-auto bg-primary  overflow-hidden shadow-2xl">
         
         <div className="flex flex-col lg:flex-row">
           
@@ -32,7 +32,7 @@ const WhyXPACE = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="w-full lg:w-1/2 p-8 md:p-10 flex flex-col justify-center !text-white"
+            className="w-full lg:w-1/2 p-8  flex flex-col justify-center !text-white"
           >
             <h2 className="text-3xl md:text-3xl font-bold mb-5 !text-white">
               Why XPACE?

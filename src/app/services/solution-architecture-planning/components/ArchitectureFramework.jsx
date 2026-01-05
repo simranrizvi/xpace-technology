@@ -38,7 +38,7 @@ const ArchitectureFramework = () => {
         
         {/* Section Title */}
         <div className="text-center mb-15">
-          <h2 className="text-3xl md:text-4xl !font-bold text-primary">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
             Our Architecture Framework
           </h2>
         </div>
