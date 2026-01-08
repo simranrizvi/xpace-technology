@@ -177,7 +177,7 @@ export default function Page() {
       ========================================= */}
       <section className="bg-[#0f111a] py-24 text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             
             <div className="lg:col-span-1">
               <span className="text-[#dc1e25] font-bold text-xs tracking-widest uppercase mb-2 block">Capabilities</span>
@@ -191,7 +191,7 @@ export default function Page() {
               </a>
             </div>
 
-            <div className="lg:col-span-2 space-y-4">
+            <div className="lg:col-span-2 space-y-3">
                <FeatureCard 
                  icon={<Mic />} title="Multi-Modal Interaction" 
                  desc="Switch seamlessly between voice and text. Perfect for hands-free environments like healthcare or manufacturing."
@@ -327,16 +327,16 @@ export default function Page() {
       {/* =========================================
           SECTION 7: CTA / FOOTER TOP
       ========================================= */}
-      <section className="py-24 bg-white text-center">
+      <section className="py-24 bg-accent text-center">
         <h2 className="text-3xl font-bold text-[#1a233b] mb-4">Upgrade Your Interface</h2>
         <p className="text-gray-500 mb-10 max-w-xl mx-auto">
           The keyboard is no longer the only way to work. Redefine productivity.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="bg-[#dc1e25] text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors shadow-lg shadow-red-500/20">
+          <button className="bg-white text-accent px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors shadow-lg shadow-red-500/20">
             Experience Video Demo
           </button>
-          <button className="bg-white text-[#1a233b] border-2 border-[#1a233b] px-8 py-3 rounded font-bold hover:bg-gray-50 transition-colors">
+          <button className=" text-white  border-2 border-white px-8 py-3 rounded font-bold hover:bg-gray-50 transition-colors">
             Consult VUI Experts
           </button>
         </div>

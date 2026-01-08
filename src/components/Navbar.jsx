@@ -129,14 +129,26 @@ const Navbar = () => {
             "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "NLP Solutions",
-          link: "/services/nlp",
+          name: "Natural Language Processing",
+          link: "/services/natural-language-processing",
           image:
             "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Predictive Analytics",
+          name: " Predictive Analytics",
           link: "/services/predictive-analytics",
+          image:
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        },
+          {
+          name: " Business Process Automation",
+          link: "/services/business-process-automation",
+          image:
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        },
+          {
+          name: " AI Systems Integration",
+          link: "/services/ai-systems-integration",
           image:
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
         },
@@ -151,32 +163,44 @@ const Navbar = () => {
         "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
       items: [
         {
-          name: "Network Security",
-          link: "/services/network-security",
+          name: "Network Security & Protection",
+          link: "/services/network-security-protection",
           image:
             "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "SOC Monitoring",
-          link: "/services/soc",
+          name: "Threat Monitoring & Response",
+          link: "/services/threat-monitoring-&-response",
           image:
             "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "VAPT Services",
-          link: "/services/vapt",
+          name: " Vulnerability Assessment & Penetration Testing (VAPT)",
+          link: "/services/vulnerability-assessment",
           image:
             "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Identity Management",
-          link: "/services/iam",
+          name: " Security Operations (SOC)",
+          link: "/services/security-o`perations",
           image:
             "https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Data Encryption",
-          link: "/services/encryption",
+          name: "Identity & Access Management ",
+          link: "/services/identity-&-access-management",
+          image:
+            "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
+        },
+         {
+          name: "Data Encryption & Privacy ",
+          link: "/services/data-encryption-&-privacy",
+          image:
+            "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
+        },
+         {
+          name: "Risk & Compliance Security ",
+          link: "/services/risk-&-compliance-security",
           image:
             "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
         },
@@ -184,39 +208,45 @@ const Navbar = () => {
     },
     {
       id: 3,
-      title: "Cloud Infrastructure",
+      title: "Digital Infrastructure & Cloud Strategy",
       desc: "Seamless migration and management.",
       icon: <Cloud className="w-5 h-5" />,
       mainImage:
         "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800",
       items: [
         {
-          name: "Cloud Migration",
-          link: "/services/cloud-migration",
+          name: "Cloud Architecture & Migration",
+          link: "/services/cloud-architecture-&-migration",
           image:
             "https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Hybrid Solutions",
-          link: "/services/hybrid-cloud",
+          name: "Hybrid & Multi-Cloud Solutions",
+          link: "/services/hybrid-&-multi-cloud-solutions",
           image:
             "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "DevSecOps",
-          link: "/services/devsecops",
+          name: "DevSecOps Engineering",
+          link: "/services/devsecops-engineering",
           image:
             "https://images.unsplash.com/photo-1667372393119-c81c0cda7121?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Disaster Recovery",
+          name: "Disaster Recovery & Business Continuity",
           link: "/services/disaster-recovery",
           image:
             "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Systems Integration",
-          link: "/services/integration",
+          name: "Enterprise Systems Integration",
+          link: "/services/enterprise-systems-integration",
+          image:
+            "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+        },
+         {
+          name: "IT Consulting & Technology Strategy",
+          link: "/services/it-consulting-&-technology-strategy",
           image:
             "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
         },
@@ -224,39 +254,45 @@ const Navbar = () => {
     },
     {
       id: 4,
-      title: "Web3 & Blockchain",
+      title: "Governance, Risk & Compliance (GRC)",
       desc: "Decentralized future-ready tech.",
       icon: <Globe className="w-5 h-5" />,
       mainImage:
         "https://images.unsplash.com/photo-1621504450168-b8c4375b2b80?auto=format&fit=crop&q=80&w=800",
       items: [
         {
-          name: "Enterprise Blockchain",
-          link: "/services/blockchain",
+          name: "IT Policy & Governance Frameworks",
+          link: "/services/it-policy-&-governance-frameworks",
           image:
             "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Smart Contracts",
-          link: "/services/smart-contracts",
+          name: " Regulatory Compliance (ISO, GDPR, HIPAA)",
+          link: "/services/regulatory-compliance",
           image:
             "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "DApps",
-          link: "/services/dapps",
+          name: "Risk Assessment & Audits",
+          link: "/services/risk-assessment-audits",
           image:
             "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "Tokenization",
-          link: "/services/tokenization",
+          name: "Data Privacy Management",
+          link: "/services/data-privacy-management",
           image:
             "https://images.unsplash.com/photo-1622630998477-20aa696fa405?auto=format&fit=crop&q=80&w=800",
         },
         {
-          name: "NFT Platforms",
-          link: "/services/nft",
+          name: "Compliance Reporting & Documentation",
+          link: "/services/compliance-reporting-documentation",
+          image:
+            "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800",
+        },
+          {
+          name: "Business Continuity Planning (GRC Focus)",
+          link: "/services/business-continuity-planning",
           image:
             "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800",
         },
