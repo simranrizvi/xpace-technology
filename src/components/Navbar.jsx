@@ -188,13 +188,13 @@ const Navbar = () => {
         },
         {
           name: "Identity & Access Management ",
-          link: "/services/identity-&-access-management",
+          link: "/services/identify-access-management",
           image:
             "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
         },
          {
           name: "Data Encryption & Privacy ",
-          link: "/services/data-encryption-&-privacy",
+          link: "/services/data-encryption-privacy",
           image:
             "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
         },
