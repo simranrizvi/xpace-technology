@@ -216,13 +216,13 @@ const Navbar = () => {
       items: [
         {
           name: "Cloud Architecture & Migration",
-          link: "/services/cloud-architecture-&-migration",
+          link: "/services/cloud-architecture-migration",
           image:
             "https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800",
         },
         {
           name: "Hybrid & Multi-Cloud Solutions",
-          link: "/services/hybrid-&-multi-cloud-solutions",
+          link: "/services/hybrid-multi-cloud-solutions",
           image:
             "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
         },

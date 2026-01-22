@@ -335,9 +335,7 @@ const AIChatbotsPage = () => {
         </div>
       </div>
 
-      <footer className="bg-[#0b0f19] text-gray-500 py-12 text-center text-sm border-t border-gray-800">
-        <p>&copy; 2024 XPACE Technologies. All rights reserved.</p>
-      </footer>
+      
     </div>
   );
 };
