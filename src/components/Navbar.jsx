@@ -246,7 +246,7 @@ const Navbar = () => {
         },
          {
           name: "IT Consulting & Technology Strategy",
-          link: "/services/it-consulting-&-technology-strategy",
+          link: "/services/it-consulting-technology-strategy",
           image:
             "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
         },
