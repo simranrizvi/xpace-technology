@@ -262,7 +262,7 @@ const Navbar = () => {
       items: [
         {
           name: "IT Policy & Governance Frameworks",
-          link: "/services/it-policy-&-governance-frameworks",
+          link: "/services/it-policy-governance-frameworks",
           image:
             "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=800",
         },
@@ -297,6 +297,80 @@ const Navbar = () => {
             "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800",
         },
       ],
+    },
+
+    {
+      id: 5,
+      title: "Web3 & Blockchain Solutions",
+      desc: "Decentralized future-ready tech.",
+      icon: <Globe className="w-5 h-5" />,
+      mainImage:
+        "https://images.unsplash.com/photo-1621504450168-b8c4375b2b80?auto=format&fit=crop&q=80&w=800",
+      items: [
+        {
+          name: "Tokenization Solutions",
+          link: "/services/tokenization-solutions",
+          image:
+            "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=800",
+        },
+        {
+          name: "  NFT Platforms ",
+          link: "/services/nft-platforms ",
+          image:
+            "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+        },
+        {
+          name: " Web3 Consulting & Advisory ",
+          link: "/services/web3-consulting-advisory ",
+          image:
+            "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+        },
+      ],
+
+      
+    },
+
+     {
+      id: 6,
+      title: "Immersive & Emerging Technologies",
+      desc: "Decentralized future-ready tech.",
+      icon: <Globe className="w-5 h-5" />,
+      mainImage:
+        "https://images.unsplash.com/photo-1621504450168-b8c4375b2b80?auto=format&fit=crop&q=80&w=800",
+      items: [
+        {
+          name: " AR / VR Application Development  ",
+          link: "/services/ar-vr-application-development  ",
+          image:
+            "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=800",
+        },
+        {
+          name: " Digital Twin Solutions  ",
+          link: "/services/digital-twin-solutions  ",
+          image:
+            "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+        },
+        {
+          name: "  Metaverse Experiences  ",
+          link: "/services/metaverse-experiences  ",
+          image:
+            "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+        },
+        {
+          name: "  3D Modeling & Simulation  ",
+          link: "/services/3d-modeling-simulation  ",
+          image:
+            "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+        },
+        {
+          name: "  Innovation Prototyping    ",
+          link: "/services/innovation-prototyping    ",
+          image:
+            "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+        },
+      ],
+
+      
     },
   ];
 
@@ -383,7 +457,7 @@ const Navbar = () => {
                   </button>
 
                   <div className="absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top">
-                    <div className="max-w-7xl mx-auto flex h-[450px]">
+                    <div className="max-w-7xl mx-auto flex h-[550px]">
                       {/* Sidebar Categories */}
                       <div className="w-[22%] bg-slate-50 py-8 border-r border-gray-100">
                         <div className="px-6 mb-4 text-xs font-bold text-gray-400 uppercase tracking-wider">
