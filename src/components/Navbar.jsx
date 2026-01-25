@@ -391,16 +391,19 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-stretch">
-          {/* LOGO SECTION - Full Height */}
-          <div className="bg-[#1a2e44] min-w-[180px] relative border-r-[7px] border-[#e31e24] flex items-center justify-center z-30 shrink-0">
-            <Link href="/" className="py-8 px-6 cursor-pointer">
-              <img
-                src="/xpace white logo.png"
-                alt="XPACE"
-                className="w-[140px] h-auto object-contain"
-              />
-            </Link>
-          </div>
+        {/* LOGO SECTION - Full Height on Desktop, Smaller on Mobile */}
+<div className="bg-[#1a2e44] min-w-[100px] md:min-w-[180px] relative border-r-[7px] border-[#e31e24] flex items-center justify-center z-30 shrink-0">
+  <Link href="/" className="py-4 md:py-8 px-4 md:px-6 cursor-pointer">
+    <img
+      src="/xpace white logo.png"
+      alt="XPACE"
+      className="w-[90px] md:w-[140px] h-auto object-contain"
+    />
+  </Link>
+
+
+  
+</div>
 
           {/* RIGHT SECTION - Top Bar + Navigation */}
           <div className="flex-1 flex flex-col min-w-0">

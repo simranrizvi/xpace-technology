@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-// Maan lete hain aapka button component isi path par hai
 import Button from "./../../components/ui/Button";
 import { BsPlus, BsDash } from "react-icons/bs";
 
@@ -26,14 +25,14 @@ const faqData = [
   },
   {
     id: 4,
-    question: "How can i find my solutions?",
+    question: "How can I find my solutions?",
     answer:
       "Explore our website for services, schedule a consultation for tailored solutions, and review client testimonials to find the best fit for your needs.",
   },
 ];
 
 export default function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(1); // Second one open by default as per screenshot
+  const [activeIndex, setActiveIndex] = useState(1); // Second one open by default
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -42,9 +41,9 @@ export default function FAQSection() {
   return (
     <section className="relative overflow-hidden">
       <div className="flex flex-col lg:flex-row min-h-[700px]">
-        {/* --- Left Column: Contact Form --- */}
+        {/* ===== LEFT COLUMN: Contact Form ===== */}
         <div className="w-full lg:w-1/2 relative bg-[#1c1e22] py-20 px-6 md:px-16 flex items-center justify-end">
-          {/* Background Image with Overlay */}
+          {/* Background Image Overlay */}
           <div
             className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
             style={{ backgroundImage: "url('homepage/3.jpg')" }}
@@ -54,7 +53,7 @@ export default function FAQSection() {
             {/* Top Red Border */}
             <div className="h-1.5 w-full bg-red-600 mb-0"></div>
 
-            <div className="bg-[#25272b] p-8 md:p-12 shadow-2xl">
+            <div className="bg-[#25272b] p-8 md:p-12 shadow-2xl rounded-lg">
               <div className="mb-8">
                 <span className="text-red-600 font-bold uppercase tracking-widest text-xs">
                   Contact us
@@ -68,25 +67,25 @@ export default function FAQSection() {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white focus:outline-none focus:border-red-600 transition-colors"
+                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
                   required
                 />
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white focus:outline-none focus:border-red-600 transition-colors"
+                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
                   required
                 />
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white focus:outline-none focus:border-red-600 transition-colors"
+                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
                   required
                 />
                 <textarea
                   placeholder="Write a Message"
                   rows="4"
-                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white focus:outline-none focus:border-red-600 transition-colors"
+                  className="w-full bg-[#1c1e22] border border-white/5 p-4 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
                   required
                 ></textarea>
 
@@ -100,7 +99,7 @@ export default function FAQSection() {
           </div>
         </div>
 
-        {/* --- Right Column: FAQs --- */}
+        {/* ===== RIGHT COLUMN: FAQs ===== */}
         <div className="w-full lg:w-1/2 bg-[#f4f5f8] py-20 px-6 md:px-16 relative">
           {/* Pattern Background */}
           <div
@@ -112,28 +111,28 @@ export default function FAQSection() {
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-red-600 font-bold uppercase tracking-widest text-xs">
-                  Questions & answers
+                  Questions & Answers
                 </span>
                 <div className="w-10 h-[2px] bg-red-600"></div>
               </div>
-              <h2 className="text-[#1a2b4e] text-4xl md:text-5xl font-extrabold leading-tight">
+              <h2 className="text-[#1a2b4e] text-2xl md:text-5xl font-extrabold leading-tight">
                 See Frequently <br /> Asked Questions
               </h2>
             </div>
 
-            {/* Accordion Box */}
+            {/* Accordion */}
             <div className="space-y-4">
               {faqData.map((faq, index) => (
-                <div key={faq.id} className="border border-gray-200 bg-white">
+                <div key={faq.id} className="border border-gray-200 rounded-md overflow-hidden shadow-sm">
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className={`w-full flex items-center justify-between p-5 text-left transition-all duration-300 ${
+                    className={`w-full flex items-center justify-between p-5 text-left transition-all duration-300 font-semibold ${
                       activeIndex === index
                         ? "bg-red-600 text-white"
                         : "bg-white text-primary"
                     }`}
                   >
-                    <span className="font-bold text-lg">{faq.question}</span>
+                    <span>{faq.question}</span>
                     <span className="text-2xl">
                       {activeIndex === index ? <BsDash /> : <BsPlus />}
                     </span>
@@ -141,14 +140,10 @@ export default function FAQSection() {
 
                   <div
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                      activeIndex === index
-                        ? "max-h-96 opacity-100 p-6"
-                        : "max-h-0 opacity-0"
+                      activeIndex === index ? "max-h-96 opacity-100 p-6" : "max-h-0 opacity-0 p-0"
                     }`}
                   >
-                    <p className="text-gray-600 leading-relaxed">
-                      {faq.answer}
-                    </p>
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               ))}
