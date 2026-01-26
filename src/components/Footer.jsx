@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react';
+import Link from "next/link";
 import {
   Twitter, Linkedin, Facebook, Instagram, Youtube,
   Mail, Phone, MapPin, ArrowUp, Send,
@@ -58,28 +59,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10 pt-20">
 
 
-        {/* --- GLOBAL REACH HEADER --- */}
-        <div className="flex flex-col lg:flex-row items-end justify-between gap-12 pb-16 border-b border-white/5">
-           <div className="space-y-4 max-w-2xl">
-              <div className="flex items-center gap-2 text-[#dc1e25] font-bold text-xs uppercase tracking-widest mb-2">
-                 <Globe size={14} className="animate-spin-slow"/> Global Operations
-              </div>
-              <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
-                 Powering the Next <br/>
-                 Generation of <span className="text-[#dc1e25]">Giants.</span>
-              </h2>
-           </div>
-           
-           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full lg:w-auto">
-              <StatItem val="40+" label="Countries" icon={<MapPin size={16}/>} />
-              <StatItem val="500+" label="Clients" icon={<Building size={16}/>} />
-              <StatItem val="24/7" label="Support" icon={<Activity size={16}/>} />
-              <StatItem val="100%" label="Secure" icon={<Shield size={16}/>} color="text-[#dc1e25]" />
-           </div>
-        </div>
+        
        
         {/* --- FOOTER LINKS GRID --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 py-10">
          
           {/* Brand Column (Col 1-4) */}
           <div className="md:col-span-4 space-y-6">
@@ -95,7 +78,19 @@ const Footer = () => {
               Building the digital backbone for tomorrow's enterprises. Secure, Scalable, and Future-Proof.
             </p>
 
+<div className="flex flex-row gap-6 items-center">
+  {/* Email */}
+  <div className="flex items-center gap-2">
+    <Mail className="w-5 h-5 text-gray-500" />
+    <span>info@xpace.com</span>
+  </div>
 
+  {/* Phone */}
+  <div className="flex items-center gap-2">
+    <Phone className="w-5 h-5 text-gray-500" />
+    <span>+92 300 1234567</span>
+  </div>
+</div>
             <div className="flex gap-4 pt-2">
               <SocialBtn icon={<Linkedin size={18}/>} />
               <SocialBtn icon={<Twitter size={18}/>} />
@@ -161,9 +156,15 @@ const Footer = () => {
          
           <div className="flex items-center gap-8">
              <span>&copy; 2024 XPACE Technologies</span>
-             <a href="#" className="hover:text-white transition-colors">Privacy</a>
-             <a href="#" className="hover:text-white transition-colors">Terms</a>
-             <a href="#" className="hover:text-white transition-colors">Sitemap</a>
+            <Link href="/privacy-and-policy" className="hover:text-white transition-colors">
+    Privacy
+  </Link>
+  <Link href="/terms" className="hover:text-white transition-colors">
+    Terms
+  </Link>
+  <Link href="/sitemap" className="hover:text-white transition-colors">
+    Sitemap
+  </Link>
           </div>
 
 
