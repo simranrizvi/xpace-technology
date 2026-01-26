@@ -50,9 +50,10 @@ const Navbar = () => {
   const companyLinks = [
     { title: "About Us", link: "/about" },
     { title: "Technology We Use", link: "/technology" },
-    { title: "Research & Development", link: "/research" },
-    { title: "Partnerships & Alliances", link: "/partnerships" },
+    { title: "Research & Development", link: "/research-development " },
+    { title: "Partnerships & Alliances", link: "/partner-and-alliance" },
     { title: "Careers", link: "/careers" },
+   
   ];
 
   const insightsLinks = [
@@ -587,16 +588,14 @@ const Navbar = () => {
                 <NavLink text="Industries" href="/industries" />
                 <SimpleDropdown title="Insights" links={insightsLinks} />
                 <NavLink text="Contact" href="/contact" />
+                 <NavLink text="Appointment" href="/appointment" />
+                  <NavLink text="Portfolio" href="/portfolio" />
+                     <NavLink text="CSR" href="/csr" />
               </div>
 
               {/* CTA */}
               <div className="hidden lg:flex items-center gap-5">
-                <button
-                  className="text-gray-400 hover:text-[#dc1e25] transition-colors"
-                  aria-label="Search"
-                >
-                  <Search size={20} />
-                </button>
+              
                 <div className="h-6 w-[1px] bg-gray-200"></div>
                 <Link
                   href="/proposal"
@@ -611,7 +610,7 @@ const Navbar = () => {
 
               {/* MOBILE TOGGLE */}
               <button
-                className="lg:hidden text-[#203253]"
+                className="lg:hidden text-primary"
                 onClick={() => setIsMobileMenuOpen(true)}
                 aria-label="Open menu"
               >
